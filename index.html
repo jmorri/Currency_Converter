@@ -7,51 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- links to css, fonts, all kind of styles -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton-flexbox.css">
-    <link rel="stylesheet" href="css/custom_styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/scripts.js"></script>
     <title>Currency Converter</title>
 </head>
 
-<body>
+<body class="body" id="body">
     <header>        
+        <div id="container">
+            <img src="img/candyburger.png" 
+                 alt="hamburger menu icon">
+        </div>
+        <nav class="header-nav">
+            <ul id="nav-menu">
+                <li></li>
+                <li><a href="">Currency Converter</a></li>
+                <li></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <div class="container-padding center-xs">
-            <p class="jumbo_text u-full-width">Currency Converter</p>
-            <!-- The above form looks like this -->
-            <form>
-                <div class="row between-xs">
-                    <div class="col-sm-5">
-                    <label for="exampleEmailInput">Your email</label>
-                    <input class="u-full-width" placeholder="test@mailbox.com" id="exampleEmailInput" type="email">
-                    </div>
-                    <div class="col-xs-2">
-                        <h2 class="center_text">=</h2>
-                    </div>
-                    <div class="col-xs-5">
-                    <label for="exampleRecipientInput">Reason for contacting</label>
-                    <select class="u-full-width" id="exampleRecipientInput">
-                        <option value="Option 1">Questions</option>
-                        <option value="Option 2">Admiration</option>
-                        <option value="Option 3">Can I get your number?</option>
-                    </select>
-                    </div>
-                </div>
-                <label for="exampleMessage">Message</label>
-                <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
-                <label class="example-send-yourself-copy">
-                    <input type="checkbox">
-                    <span class="label-body">Send a copy to yourself</span>
-                </label>
-                <input class="button-primary" value="Submit" type="submit">
-            </form>
-        
-            <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
-        
-            <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
-        </div>
-  
+        <article class="main-content">
+           
+            <div class="form-group">
+              <label>Amount</label>
+              <input value="Rick" class="input-control" />
+          
+              <label class="right-inline">Control</label>
+              <input value="Strahl" class="input-control" />
+            </div>
+          
+            <div class="form-group">
+              <label>From</label>
+              <input value="West Wind" class="input-control" />
+            </div>
+          
+            <div class="form-group">
+              <label>To</label>
+              <textarea class="input-control">32 North End</textarea>
+            </div>
+          
+            <div class="form-group">
+              <label>Currnecy Type</label>
+              <input value="Walnut Creek" class="input-control" placeholder="City" style="flex: 6" />    
+              <input value="CA" class="input-control" placeholder="State" style="flex:1" />    
+              <input value="94152" class="input-control" placeholder="Postal Code" style="flex:2" />
+            </div>
+          
+            <div class="form-group">
+              <label>&nbsp;</label>
+              <button class="btn">Save</button>
+              <button class="btn">Cancel</button>
+          
+            </div>
+          
+          </article>
     </main>
     <footer>
         <p>&copy; Copyright</p>
