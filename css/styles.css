@@ -34,9 +34,23 @@ font-family: Arial, Helvetica, sans-serif;
 .jumbo_text {
     font-size: 5.4em;
 }
-
+.form_options{
+ display: block;
+ padding: 5% 0%;
+}
+#to{
+    width:50%;
+    padding: 4%;
+}
+#from{
+    width: 50%;
+    padding: 4%;
+}
 header {
-    background-color:#00000014;
+    background-color: #00000014;
+    border: 0.5px;
+    border-color: #ffffff70;
+    border-style: solid;
     display: flex;
     flex-direction: column;
 }
@@ -85,6 +99,7 @@ button:hover {
 article {
     background-color: #0000001f;
     padding: 1.5rem 1.5rem 0.8rem 1.5rem;
+    width: 70%;
 }
 
 footer {
@@ -144,18 +159,23 @@ footer p {
     background-image: -ms-linear-gradient(top, #c44e00, #ff9a57);
     background-image: -o-linear-gradient(top, #c44e00, #ff9a57);
     background-image: linear-gradient(to bottom, #c44e00, #ff9a57);
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
+    -webkit-border-radius: 1;
+    -moz-border-radius: 1;
+    border-radius: 1px;
     -webkit-box-shadow: 0px 1px 11px #666666;
     -moz-box-shadow: 0px 1px 11px #666666;
     box-shadow: 0px 1px 11px #666666;
     font-family: Arial;
     color: #ffffff;
     font-size: 20px;
-    padding: 10px 20px 10px 20px;
+    width: 50%;
     text-decoration: none;
   }
+
+  button, input, optgroup, select, textarea {
+    line-height: 1.15;
+    margin: 0px 5px;
+}
   
   .btn:hover {
     background: #c44e00;
@@ -190,15 +210,9 @@ footer p {
   .form-group .input-control {
     flex: 1 1 auto;
     display: block;
-    margin-bottom: 10px;
-    margin-right: 8px;
-    padding: 4px;
-    margin-top: -4px;
   }
   
   button {
-    padding: 5px 15px;
-    margin: 5px;
     min-width: 100px
   }
   

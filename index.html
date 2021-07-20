@@ -28,34 +28,41 @@
     </header>
     <main>
         <article class="main-content">
-           
-            <div class="form-group">
-              <label>Amount</label>
-              <input value="" class="input-control" />
           
-              <label class="right-inline">Control</label>
-              <input value="" class="input-control" />
+          <div class="form-group">
+            <textarea class="input-control">Amount</textarea>
+          </div>
+
+          
+            <div class="form-group form_options">
+              <select id="to" name="to">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select>
+          
+              <select id="from" name="from">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select>
             </div>
           
             <div class="form-group">
-              <label>From</label>
               <input value="" class="input-control" />
             </div>
           
-            <div class="form-group">
-              <label>To</label>
-              <textarea class="input-control"></textarea>
-            </div>
-          
+          <!--
             <div class="form-group">
               <label>Currnecy Type</label>
               <input value="" class="input-control" placeholder="currency pair 1" style="flex: 6" />    
               <input value="" class="input-control" placeholder="currency pair 2" style="flex:1" />    
               <input value="" class="input-control" placeholder="currency pair 3" style="flex:2" />
             </div>
-          
+          -->
             <div class="form-group">
-              <label>&nbsp;</label>
               <button class="btn">Convert</button>
               <button class="btn">Clear</button>
             </div>
