@@ -30,28 +30,31 @@
         <article class="main-content">
           
           <div class="form-group">
-            <textarea class="input-control">Amount</textarea>
+            <input type="number" class="input-control" id="amount" />
           </div>
 
           
             <div class="form-group form_options">
-              <select id="to" name="to">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
+              <select id="to" class="to" name="to">
+                <option>PLN</option>
+                <option>EUR</option>
+                <option>USD</option>
               </select>
           
-              <select id="from" name="from">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
+              <select id="from" class="from" name="from">
+                <option>EUR</option>
+                <option>USD</option>
+                <option>PLN</option>
               </select>
             </div>
           
-            <div class="form-group">
-              <input value="" class="input-control" />
+            <div class="result" id="result">
+              <p>
+                <span class="given-amount"></span> 
+                <span class="base-currency"></span>
+                <span class="final-result"></span> 
+                <span class="second-currency"></span>
+              </p>
             </div>
           
           <!--
@@ -62,9 +65,9 @@
               <input value="" class="input-control" placeholder="currency pair 3" style="flex:2" />
             </div>
           -->
-            <div class="form-group">
-              <button class="btn">Convert</button>
-              <button class="btn">Clear</button>
+            <div class="form-group button-group">
+                <button class="btn convert">Convert</button>
+                <button class="btn clear" onclick="clearVal()">X</button>
             </div>
           
           </article>
