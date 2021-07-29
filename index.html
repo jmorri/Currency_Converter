@@ -8,24 +8,35 @@
     <!-- links to css, fonts, all kind of styles -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="js/scripts.js"></script>
     <title>Currency Converter</title>
 </head>
 
 <body class="body" id="body">
-    <header>        
-        <div id="container">
-            <img src="img/candyburger.png" 
-                 alt="hamburger menu icon">
-        </div>
-        <nav class="header-nav">
-            <ul id="nav-menu">
-                <li></li>
-                <li><a href="">Currency Converter</a></li>
-                <li></li>
-            </ul>
-        </nav>
-    </header>
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </span>
+    <a href="#" class="logo"><img src="img/icon.png" class="icon" /></a>
+    <ul class="main-nav" id="js-menu">
+        <li>
+            <a href="#" class="nav-links">Home</a>
+        </li>
+        <li>
+            <a href="#" class="nav-links">Products</a>
+        </li>
+        <li>
+            <a href="#" class="nav-links">About Us</a>
+        </li>
+        <li>
+            <a href="#" class="nav-links">Contact Us</a>
+        </li>
+        <li>
+            <a href="#" class="nav-links">Blog</a>
+        </li>
+    </ul>
+</nav>
     <main>
         <article class="main-content">
           
@@ -56,25 +67,79 @@
                 <span class="second-currency"></span>
               </p>
             </div>
-          
-          <!--
-            <div class="form-group">
-              <label>Currnecy Type</label>
-              <input value="" class="input-control" placeholder="currency pair 1" style="flex: 6" />    
-              <input value="" class="input-control" placeholder="currency pair 2" style="flex:1" />    
-              <input value="" class="input-control" placeholder="currency pair 3" style="flex:2" />
-            </div>
-          -->
+
             <div class="form-group button-group">
                 <button class="btn convert">Convert</button>
                 <button class="btn clear" onclick="clearVal()">X</button>
             </div>
           
           </article>
+
+<aside>
+  <div class='row'>
+    <div class='column'>
+      <div class='blue-column'>
+        Column 2Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+            centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+            Why do we use it?
+            It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+            letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+            desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+            search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved
+            over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      </div>
+    </div>
+    <div class='column'>
+      <div class='green-column'>
+        Column 2Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+            centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+            Why do we use it?
+            It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+            letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+            desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+            search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved
+            over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      </div>
+    </div>
+    <div class='column'>
+      <div class='orange-column'>
+        Column 2Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+        recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        Why do we use it?
+        It is a long established fact that a reader will be distracted by the readable content of a page when
+        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+        desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+        search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved
+        over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      </div>
+    </div>
+  </div>
+</aside>
+          
     </main>
+
     <footer>
-        <p>&copy; Copyright</p>
+      <p>&copy; Copyright</p>
     </footer>
+
 </body>
 
 </html>
