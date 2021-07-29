@@ -34,6 +34,8 @@ function convertCurrency(event) {
 
 btn.addEventListener('click', convertCurrency);
 
+/*clear button*/
+
 function clearVal() {
     window.location.reload();
     document.getElementsByClassName("finalValue").innerHTML = "";
