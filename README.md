@@ -18,9 +18,10 @@ latest browser version of your choice
 * Step-by-step bullets
 * Click the left dropdown option for your currency you want to convert and then click on the right dropdown to the currency you want to convert to.
 * click the convert button to convert your currency pairs.
-*The results will be desplayed above the button group.
-*If you made a mistake or need to clear the results just click the clear[X] button to the right of the convert button.
-*Place holder text was placed at the bottom of the site to show text manipulation from desktop to mobile view.   
+* The results will be desplayed above the button group.
+* If you made a mistake or need to clear the results just click the clear[X] button to the right of the convert button.
+* Place holder text was placed at the bottom of the site to show text manipulation from desktop to mobile view. 
+* Nav Menu added to make the site more appealing but it doesnt have any functionaliy to it.  
 
 ## Authors
 
